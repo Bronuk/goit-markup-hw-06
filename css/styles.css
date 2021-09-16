@@ -630,8 +630,78 @@ body {
 }
 
 .mailing {
+  display: flex;
+  position: relative;
+  width: 570px;
+  height: 86px;
   margin-left: 93px;
   margin-top: 72px;
+}
+
+.mailing-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mailing-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.mailing-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+
+  padding-left: 16px;
+
+  outline: none;
+}
+
+.mailing-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2196f3;
+  border: none;
+
+  right: 0;
+  bottom: 0;
+}
+
+.mailing-btn:hover,
+.mailing-btn:focus {
+  cursor: pointer;
+}
+
+.mailing-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #ffffff;
 }
 /* ------------------------PORFOLIO.HTML------------------------ */
 
@@ -845,6 +915,7 @@ body {
 
 .form-contacts {
   position: relative;
+  display: block;
   margin-bottom: 10px;
 
   transition-property: border, fill;
@@ -853,8 +924,6 @@ body {
 }
 
 .form-contacts:focus-within {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
   fill: #2196f3;
 }
 
@@ -866,6 +935,11 @@ body {
   width: 100%;
   border-radius: 4px;
   padding-left: 42px;
+}
+
+.form-input:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
   outline: none;
 }
 
